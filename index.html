@@ -16,15 +16,36 @@
     </p>
 
     <form action="" id="survey-form">
-      <p>Name :</p>
+      <label for="name" id="name-label">Name</label>
       <input type="text" id="name" placeholder="Enter Your Name" required />
-      <p>Email :</p>
+      <label for="email" id="email-label">Email</label>
       <input type="email" id="email" placeholder="Enter your email" required />
-      <p>Number :</p>
-      <input type="number" id="number" placeholder="Enter your phone number" required />
+      <label for="number" id="number-label">Phone number</label>
+      <input
+        type="number"
+        id="number"
+        placeholder="Enter your phone number"
+        min="0000000000"
+        max="9999999999"
+        required
+      />
+      <label for="dropdown" id="dropdown-label"
+        >Which option best describes your current role?</label
+      >
+      <select name="dropdiwn" id="dropdown">
+        <option value="Select" aria-placeholder="Select Your role"
+          >Select Your role</option
+        >
+        <option value="Full Time Student">Full Time Student</option>
+        <option value="Part Time Student">Part Time Student</option>
+        <option value="Teacher">Teacher</option>
+        <option value="Mentor">Mentor</option>
+        <option value="Other">Other</option>
+      </select>
+      <input type="radio" name="gender" value="male" /> Male <br />
+      <input type="radio" name="gender" value="female" /> Female <br />
+      <input type="radio" name="gender" value="other" /> Other <br />
     </form>
-
-
 
     <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
     <script src="js/index.js"></script>
